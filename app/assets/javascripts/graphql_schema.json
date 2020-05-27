@@ -17,9 +17,7 @@
             {
               "name": "currentUser",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "User",
@@ -58,9 +56,7 @@
             {
               "name": "eventTypes",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -150,9 +146,7 @@
             {
               "name": "offices",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -168,9 +162,7 @@
             {
               "name": "organizations",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -186,9 +178,7 @@
             {
               "name": "pendingIndividualEvents",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -204,9 +194,7 @@
             {
               "name": "roles",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -248,9 +236,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -262,9 +248,7 @@
             {
               "name": "id",
               "description": "ID of the object.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -342,9 +326,7 @@
             {
               "name": "email",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -360,9 +342,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -411,9 +391,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -429,9 +407,7 @@
             {
               "name": "individualEvents",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -447,9 +423,7 @@
             {
               "name": "isAdmin",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -461,9 +435,7 @@
             {
               "name": "locale",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -475,9 +447,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -489,9 +459,7 @@
             {
               "name": "office",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Office",
@@ -503,9 +471,7 @@
             {
               "name": "photo",
               "description": "Profile photo URL",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -517,9 +483,7 @@
             {
               "name": "role",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Role",
@@ -531,9 +495,7 @@
             {
               "name": "team",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -545,9 +507,7 @@
             {
               "name": "timezone",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -586,9 +546,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -604,9 +562,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -622,9 +578,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -657,9 +611,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -675,9 +627,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -693,9 +643,7 @@
             {
               "name": "identifier",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -711,9 +659,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -729,9 +675,7 @@
             {
               "name": "timezone",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -784,9 +728,7 @@
             {
               "name": "date",
               "description": "Date of the event",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -802,9 +744,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -820,9 +760,7 @@
             {
               "name": "duration",
               "description": "Duration of the event in minutes",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -838,9 +776,7 @@
             {
               "name": "eventType",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "EventType",
@@ -852,9 +788,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -870,9 +804,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -888,9 +820,7 @@
             {
               "name": "office",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Office",
@@ -902,9 +832,7 @@
             {
               "name": "organization",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Organization",
@@ -916,9 +844,7 @@
             {
               "name": "status",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -934,9 +860,7 @@
             {
               "name": "user",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "User",
@@ -994,9 +918,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1012,9 +934,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1030,9 +950,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1048,9 +966,7 @@
             {
               "name": "location",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1066,9 +982,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1084,9 +998,7 @@
             {
               "name": "website",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1115,9 +1027,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1133,9 +1043,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1151,9 +1059,7 @@
             {
               "name": "title",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1186,9 +1092,7 @@
             {
               "name": "capacity",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1204,9 +1108,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1222,9 +1124,7 @@
             {
               "name": "duration",
               "description": "Duration of the event in minutes",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1240,9 +1140,7 @@
             {
               "name": "end",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1254,9 +1152,7 @@
             {
               "name": "eventType",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "EventType",
@@ -1268,9 +1164,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1286,9 +1180,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1304,9 +1196,7 @@
             {
               "name": "location",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1322,9 +1212,7 @@
             {
               "name": "office",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Office",
@@ -1336,9 +1224,7 @@
             {
               "name": "organization",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Organization",
@@ -1350,9 +1236,7 @@
             {
               "name": "signups",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -1368,9 +1252,7 @@
             {
               "name": "start",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1382,9 +1264,7 @@
             {
               "name": "title",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1400,9 +1280,7 @@
             {
               "name": "users",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -1435,9 +1313,7 @@
             {
               "name": "event",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Event",
@@ -1449,9 +1325,7 @@
             {
               "name": "gid",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1467,9 +1341,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1485,9 +1357,7 @@
             {
               "name": "user",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "User",
@@ -1678,9 +1548,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1692,9 +1560,7 @@
             {
               "name": "directives",
               "description": "A list of all directives supported by this server.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1718,9 +1584,7 @@
             {
               "name": "mutationType",
               "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
@@ -1732,9 +1596,7 @@
             {
               "name": "queryType",
               "description": "The type that query operations will be rooted at.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1750,9 +1612,7 @@
             {
               "name": "subscriptionType",
               "description": "If this server support subscription, the type that subscription operations will be rooted at.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
@@ -1764,9 +1624,7 @@
             {
               "name": "types",
               "description": "A list of all types supported by this server.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1789,9 +1647,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1803,9 +1659,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1879,9 +1733,7 @@
             {
               "name": "inputFields",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -1901,9 +1753,7 @@
             {
               "name": "interfaces",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -1923,9 +1773,7 @@
             {
               "name": "kind",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1941,9 +1789,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1955,9 +1801,7 @@
             {
               "name": "ofType",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
@@ -1969,9 +1813,7 @@
             {
               "name": "possibleTypes",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -1990,9 +1832,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2063,9 +1903,7 @@
             {
               "name": "args",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2089,9 +1927,7 @@
             {
               "name": "deprecationReason",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2103,9 +1939,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2117,9 +1951,7 @@
             {
               "name": "isDeprecated",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2135,9 +1967,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2153,9 +1983,7 @@
             {
               "name": "type",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2170,9 +1998,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2184,9 +2010,7 @@
             {
               "name": "defaultValue",
               "description": "A GraphQL-formatted string representing the default value for this input value.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2198,9 +2022,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2212,9 +2034,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2230,9 +2050,7 @@
             {
               "name": "type",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2247,9 +2065,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2261,9 +2077,7 @@
             {
               "name": "deprecationReason",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2275,9 +2089,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2289,9 +2101,7 @@
             {
               "name": "isDeprecated",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2307,9 +2117,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2324,9 +2132,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2338,9 +2144,7 @@
             {
               "name": "args",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2364,9 +2168,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2378,9 +2180,7 @@
             {
               "name": "locations",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2404,9 +2204,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2422,9 +2220,7 @@
             {
               "name": "onField",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2440,9 +2236,7 @@
             {
               "name": "onFragment",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2458,9 +2252,7 @@
             {
               "name": "onOperation",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2475,9 +2267,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2605,11 +2395,7 @@
         {
           "name": "include",
           "description": "Directs the executor to include this field or fragment only when the `if` argument is true.",
-          "locations": [
-            "FIELD",
-            "FRAGMENT_SPREAD",
-            "INLINE_FRAGMENT"
-          ],
+          "locations": ["FIELD", "FRAGMENT_SPREAD", "INLINE_FRAGMENT"],
           "args": [
             {
               "name": "if",
@@ -2630,11 +2416,7 @@
         {
           "name": "skip",
           "description": "Directs the executor to skip this field or fragment when the `if` argument is true.",
-          "locations": [
-            "FIELD",
-            "FRAGMENT_SPREAD",
-            "INLINE_FRAGMENT"
-          ],
+          "locations": ["FIELD", "FRAGMENT_SPREAD", "INLINE_FRAGMENT"],
           "args": [
             {
               "name": "if",
@@ -2655,10 +2437,7 @@
         {
           "name": "deprecated",
           "description": "Marks an element of a GraphQL schema as no longer supported.",
-          "locations": [
-            "FIELD_DEFINITION",
-            "ENUM_VALUE"
-          ],
+          "locations": ["FIELD_DEFINITION", "ENUM_VALUE"],
           "args": [
             {
               "name": "reason",

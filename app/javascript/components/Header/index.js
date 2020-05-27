@@ -36,7 +36,7 @@ const Header = ({children}) => (
         <LogoBox>
           <Link to="/portal">
             <Logo
-              alt="Zendesk Relationshapes Logo"
+              alt="Student Forum Logo"
               src="https://i.imgur.com/i1dgOPF.png"
             />
           </Link>
