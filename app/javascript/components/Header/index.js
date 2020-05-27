@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router'
-import styled from 'styled-components'
+import React from 'react';
+import {Link} from 'react-router';
+import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const Container = styled.div`
   padding: 0;
   box-shadow: 0px 0px 5px #bbb;
   justify-content: space-around;
-`
+`;
 
 const Wrapper = styled.div`
   padding: 0 20px;
@@ -19,17 +19,17 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   flex-flow: row nowrap;
   align-items: center;
-`
+`;
 
 const Logo = styled.img`
   height: 40px;
-`
+`;
 
 const LogoBox = styled.div`
   flex-grow: 2;
-`
+`;
 
-const Header = ({ children }) => (
+const Header = ({children}) => (
   <div>
     <Container>
       <Wrapper>
@@ -37,15 +37,15 @@ const Header = ({ children }) => (
           <Link to="/portal">
             <Logo
               alt="Zendesk Relationshapes Logo"
-              src="//d1eipm3vz40hy0.cloudfront.net/images/part-header/zendesk-relationshapes-logo.svg"
+              src="https://i.imgur.com/i1dgOPF.png"
             />
           </Link>
         </LogoBox>
         {children}
       </Wrapper>
     </Container>
-    <div style={{ overflow: 'auto' }} />
+    <div style={{overflow: 'auto'}} />
   </div>
-)
+);
 
-export default Header
+export default Header;
