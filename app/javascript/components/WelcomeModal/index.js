@@ -1,42 +1,64 @@
-import React, { useContext } from 'react'
+import React, {useContext} from 'react';
 
-import * as R from 'ramda'
-import { UserContext } from '../../context'
-import { useMutation } from '@apollo/react-hooks'
-import { Modal, Header, Body, Footer, FooterItem } from '@zendeskgarden/react-modals'
-import { Button } from '@zendeskgarden/react-buttons'
-import { Tag } from '@zendeskgarden/react-tags'
+import * as R from 'ramda';
+import {UserContext} from '../../context';
+import {useMutation} from '@apollo/react-hooks';
+import {
+  Modal,
+  Header,
+  Body,
+  Footer,
+  FooterItem,
+} from '@zendeskgarden/react-modals';
+import {Button} from '@zendeskgarden/react-buttons';
+import {Tag} from '@zendeskgarden/react-tags';
 
-import ConfirmProfileSettingsMutation from './mutations/confirmProfileSettings.gql'
+import ConfirmProfileSettingsMutation
+  from './mutations/confirmProfileSettings.gql';
 
-const isFirstSignIn = R.propSatisfies(R.isNil, 'lastSignInAt')
-const confirmedProfileSetting = R.complement(R.path(['preference', 'confirmedProfileSettings']))
-const requireConfirmProfileSettings = R.allPass([isFirstSignIn, confirmedProfileSetting])
+const isFirstSignIn = R.propSatisfies (R.isNil, 'lastSignInAt');
+const confirmedProfileSetting = R.complement (
+  R.path (['preference', 'confirmedProfileSettings'])
+);
+const requireConfirmProfileSettings = R.allPass ([
+  isFirstSignIn,
+  confirmedProfileSetting,
+]);
 
 const Notifications = () => {
-  const { currentUser, setPreference } = useContext(UserContext)
-  const [confirmProfileSettings, _] = useMutation(ConfirmProfileSettingsMutation)
+  const {currentUser, setPreference} = useContext (UserContext);
+  const [confirmProfileSettings, _] = useMutation (
+    ConfirmProfileSettingsMutation
+  );
 
-  const officeName = R.path(['office', 'name'])
+  const officeName = R.path (['office', 'name']);
   const dismiss = () => {
-    confirmProfileSettings().then(r => {
-      const pref = R.path(['data', 'confirmProfileSettings'], r)
+    confirmProfileSettings ().then (r => {
+      const pref = R.path (['data', 'confirmProfileSettings'], r);
       if (pref) {
-        setPreference(pref)
+        setPreference (pref);
       }
-    })
-  }
+    });
+  };
 
-  if (currentUser && requireConfirmProfileSettings(currentUser)) {
+  if (currentUser && requireConfirmProfileSettings (currentUser)) {
     return (
       <Modal>
         <Header> 🎉 Welcome {currentUser.name}</Header>
         <Body>
           <p>
-            We have chosen <strong>{officeName(currentUser)}</strong> as your current office.
+            We have chosen
+            {' '}
+            <strong>{officeName (currentUser)}</strong>
+            {' '}
+            as your current house.
           </p>
           <p>
-            To choose a different office, simply use the <Tag pill>Default Office</Tag> setting located in your profile
+            To choose a different house, simply use the
+            {' '}
+            <Tag pill>Default House</Tag>
+            {' '}
+            setting located in your profile
             menu (top right corner of your screen.)
           </p>
         </Body>
@@ -48,10 +70,10 @@ const Notifications = () => {
           </FooterItem>
         </Footer>
       </Modal>
-    )
+    );
   }
 
-  return null
-}
+  return null;
+};
 
-export default Notifications
+export default Notifications;
