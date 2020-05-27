@@ -44,14 +44,14 @@ const Notifications = () => {
   if (currentUser && requireConfirmProfileSettings (currentUser)) {
     return (
       <Modal>
-        <Header> 🎉 Welcome {currentUser.name}</Header>
+        <Header> 🎉 Welcome to Student Forum {currentUser.name}!</Header>
         <Body>
           <p>
-            We have chosen
+            Your house is
             {' '}
             <strong>{officeName (currentUser)}</strong>
             {' '}
-            as your current house.
+            by deafult. You may change it to your assigned house using the houses tab.
           </p>
           <p>
             To choose a different house, simply use the
@@ -61,6 +61,7 @@ const Notifications = () => {
             setting located in your profile
             menu (top right corner of your screen.)
           </p>
+          <p>Please let us know if you have any questions!</p>
         </Body>
         <Footer>
           <FooterItem>
