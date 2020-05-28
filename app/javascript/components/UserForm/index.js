@@ -169,7 +169,7 @@ const UserForm = ({handleSubmit, disableSubmit, errors, offices}) => {
       <div className={s.inputGroup}>
         <div className={s.column}>
           <Field
-            label="House"
+            label="Office"
             className={s.field}
             name="office.id"
             component={renderField}
