@@ -1,12 +1,12 @@
-import React from 'react'
-import { Field } from 'redux-form'
-import moment from 'moment-timezone'
-import * as R from 'ramda'
-import AutoComplete from 'material-ui/AutoComplete'
+import React from 'react';
+import {Field} from 'redux-form';
+import moment from 'moment-timezone';
+import * as R from 'ramda';
+import AutoComplete from 'material-ui/AutoComplete';
 
-import Callout from 'components/Callout'
+import Callout from 'components/Callout';
 
-import s from './main.css'
+import s from './main.css';
 
 // mui components need inline styles
 const styles = {
@@ -23,38 +23,60 @@ const styles = {
     borderRadius: 4,
     padding: 5,
   },
-}
+};
 
-const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1)
+const capitalize = string =>
+  string.charAt (0).toUpperCase () + string.slice (1);
 
 const formatGraphQLErrors = errors =>
-  R.map(
+  R.map (
     ([field, errors]) => (
       <span key={`${field}-error`}>
-        <strong>{capitalize(field)}</strong>: {errors.join(', ')}
+        <strong>{capitalize (field)}</strong>: {errors.join (', ')}
         <br />
       </span>
     ),
-    R.toPairs(errors)
-  )
+    R.toPairs (errors)
+  );
 
-const renderFieldHelper = ({ input, type, label, className, selectOptions, disabled }) => {
+const renderFieldHelper = ({
+  input,
+  type,
+  label,
+  className,
+  selectOptions,
+  disabled,
+}) => {
   switch (type) {
     case 'input':
     case 'text':
-      return <input {...input} type={type} className={className} disabled={disabled} />
+      return (
+        <input
+          {...input}
+          type={type}
+          className={className}
+          disabled={disabled}
+        />
+      );
     case 'checkbox':
-      return <input {...input} type={type} className={className} disabled={disabled} />
+      return (
+        <input
+          {...input}
+          type={type}
+          className={className}
+          disabled={disabled}
+        />
+      );
     case 'select':
       return (
         <select {...input} className={className} disabled={disabled}>
           {selectOptions}
         </select>
-      )
+      );
     default:
-      return <Callout type="error" />
+      return <Callout type="error" />;
   }
-}
+};
 
 const renderField = props => {
   const {
@@ -62,55 +84,99 @@ const renderField = props => {
     label,
     type,
     Custom,
-    meta: { touched, error, warning },
+    meta: {touched, error, warning},
     className,
     required,
     disabled,
-  } = props
-  const fieldInput = renderFieldHelper({ input, type, label, className, selectOptions: props.children, disabled })
+  } = props;
+  const fieldInput = renderFieldHelper ({
+    input,
+    type,
+    label,
+    className,
+    selectOptions: props.children,
+    disabled,
+  });
   return (
     <div>
       <label className={s.label}>
-        {label} <span className={s.errorMsg}>{touched && error ? error : '*'}</span>
+        {label}
+        {' '}
+        <span className={s.errorMsg}>{touched && error ? error : '*'}</span>
       </label>
       <div>{Custom ? <Custom {...props} /> : fieldInput}</div>
     </div>
-  )
-}
+  );
+};
 
-const isNoErrors = errors => R.isNil(errors) || R.isEmpty(errors)
+const isNoErrors = errors => R.isNil (errors) || R.isEmpty (errors);
 
-const UserForm = ({ handleSubmit, disableSubmit, errors, offices }) => {
+const UserForm = ({handleSubmit, disableSubmit, errors, offices}) => {
   return (
     <form className={s.form} onSubmit={handleSubmit}>
-      {isNoErrors(errors) ? null : <Callout type="error" message={formatGraphQLErrors(errors)} />}
+      {isNoErrors (errors)
+        ? null
+        : <Callout type="error" message={formatGraphQLErrors (errors)} />}
       <div className={s.inputGroup}>
-        <Field label="Name" className={s.field} name="name" component={renderField} type="text" disabled />
+        <Field
+          label="Name"
+          className={s.field}
+          name="name"
+          component={renderField}
+          type="text"
+          disabled
+        />
       </div>
       <div className={s.inputGroup}>
-        <Field label="Email" className={s.field} name="email" component={renderField} type="text" disabled />
+        <Field
+          label="Email"
+          className={s.field}
+          name="email"
+          component={renderField}
+          type="text"
+          disabled
+        />
       </div>
-      <Field label="Timezone" className={s.field} name="timezone" component={renderField} type="select" disabled>
+      <Field
+        label="Timezone"
+        className={s.field}
+        name="timezone"
+        component={renderField}
+        type="select"
+        disabled
+      >
         <option value="-" key="-">
           Select Timezone
         </option>
-        {R.map(
+        {R.map (
           zone => (
             <option value={zone} key={zone}>
               {zone}
             </option>
           ),
-          moment.tz.names()
+          moment.tz.names ()
         )}
       </Field>
       <div className={s.inputGroup}>
-        <Field label="Admin" className={s.field} name="isAdmin" component={renderField} type="checkbox" />
+        <Field
+          label="Admin"
+          className={s.field}
+          name="isAdmin"
+          component={renderField}
+          type="checkbox"
+        />
       </div>
       <div className={s.inputGroup}>
         <div className={s.column}>
-          <Field label="Office" className={s.field} name="office.id" component={renderField} type="select">
+          <Field
+            label="House"
+            className={s.field}
+            name="office.id"
+            component={renderField}
+            type="select"
+          >
             <option value="-" key="-" />
-            {R.map(
+            {R.map (
               office => (
                 <option value={office.id} key={`office-${office.id}`}>
                   {office.name}
@@ -122,12 +188,16 @@ const UserForm = ({ handleSubmit, disableSubmit, errors, offices }) => {
         </div>
       </div>
       <div className={s.inputGroup}>
-        <button className={`${s.btn} ${s.primary}`} type="submit" disabled={disableSubmit}>
+        <button
+          className={`${s.btn} ${s.primary}`}
+          type="submit"
+          disabled={disableSubmit}
+        >
           Save
         </button>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default UserForm
+export default UserForm;
